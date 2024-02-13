@@ -52,6 +52,15 @@ Output:
 9
  */
 
-let input = "3 5 7";
+// let input = "7 5 3";
 
-let numbers = input.split(" ");
+// const numbers = input.split(" ");
+
+// const number1 = Number(numbers[0]);
+// const number2 = Number(numbers[1]);
+
+// const difference = number2 - number1;
+
+// const nextNumber = Number(numbers[numbers.length - 1]) + difference;
+
+// console.log(nextNumber);
