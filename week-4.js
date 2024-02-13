@@ -19,8 +19,6 @@ The program will terminate whenever it finds a vowel.
 
 // sentence = sentence.toLowerCase();
 
-// let sentenceArray = sentence.split();
-
 // let result = "";
 // for (let letter of sentence) {
 //    if (vowels.includes(letter)) {
@@ -32,3 +30,28 @@ The program will terminate whenever it finds a vowel.
 // }
 
 // console.log(result);
+
+/**
+ * Find Next Number
+
+Problem Statement
+Write a program where you will be given three numbers. You will have to find the next number.
+
+Input
+The input consists of three integer numbers.
+
+Output
+The output will be an integer number.
+
+Example:
+Enter three numbers.
+
+Input:
+3 5 7
+Output:
+9
+ */
+
+let input = "3 5 7";
+
+let numbers = input.split(" ");
