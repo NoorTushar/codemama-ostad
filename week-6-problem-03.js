@@ -26,7 +26,15 @@ const base = 3
 const exponent = 4
 
 */
-const input = "3 4";
+const input = "3 1";
 const inputNumbers = input.split(" ");
 const [base, exponent] = inputNumbers;
 console.log(Math.pow(base, exponent));
+
+// without using Math.pow
+// if input "3 4" , output: 3*3*3*3
+let result = 1;
+for (let i = 0; i < exponent; i++) {
+   result = result * base;
+}
+console.log(result);

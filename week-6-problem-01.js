@@ -41,25 +41,23 @@ input b = 12
 */
 const input = "5 15";
 
-const inputArray = input.split(" ");
+const [a, b] = input.split(" ");
 
-const [a, b] = inputArray;
+const createDivisorList = (queryNumber) => {
+   let divisorListArray = [];
+
+   for (let i = 1; i <= queryNumber; i++) {
+      if (queryNumber % i === 0) {
+         divisorListArray.push(i);
+      }
+   }
+
+   return divisorListArray;
+};
 
 // for a divisor array:
-const divisorListOfA = [];
-for (let i = 1; i <= a; i++) {
-   if (a % i === 0) {
-      divisorListOfA.push(i);
-   }
-}
-
-// for b divisor array:
-const divisorListOfB = [];
-for (let i = 1; i <= b; i++) {
-   if (b % i === 0) {
-      divisorListOfB.push(i);
-   }
-}
+const divisorListOfA = createDivisorList(a);
+const divisorListOfB = createDivisorList(b);
 
 const commonDivisors = [];
 divisorListOfA.forEach((item) => {
