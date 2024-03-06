@@ -26,7 +26,7 @@ const base = 3
 const exponent = 4
 
 */
-const input = "3 1";
+const input = "3 4";
 const inputNumbers = input.split(" ");
 const [base, exponent] = inputNumbers;
 console.log(Math.pow(base, exponent));
