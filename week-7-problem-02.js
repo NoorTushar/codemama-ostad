@@ -21,3 +21,12 @@ Input:
 Output:
 15000
 */
+
+const input = "10 25"; // minute frames/second
+
+const inputArray = input.split(" ");
+
+const seconds = parseFloat(inputArray[0]) * 60;
+
+const totalFrames = parseInt(parseFloat(inputArray[1]) * seconds);
+console.log(totalFrames);
